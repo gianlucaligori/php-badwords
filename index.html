@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="index.php">
-        <input type="text">
-        <input type="text">
-        <button type="submit"></button>
+    <h1>Form Censura Parole e Lunghezza</h1>
+    <form action="index.php" method="POST">
 
+        <label for="paragrafo">Inserisci testo:</label>
+        <input type="paragrafo" name="paragrafo" id=""> 
+
+        <label for="paragrafo">Inserisci parola da censurare:</label>
+        <input type="text" name="bannedWord" id=""> 
+        <input type="submit" value="Censura!">
     </form>
 </body>
 </html>
